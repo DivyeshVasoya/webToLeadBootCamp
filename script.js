@@ -1,11 +1,18 @@
 console.log("Create-Web-To-Lead-Form");
-function beforesubmit(){
+let captcha=false;
+function beforesubmit(event){
+
+    if(captcha){
     let outputdate=document.querySelector(".outputdate");
     let inpputdate=document.querySelector(".inputdate");
     console.log(inpputdate.value);//string--> date(en_IN)
     console.log(outputdate.value);
     let formatedate=new Date(inpputdate.value).toLocaleDateString("en-IN");
     outputdate.value=formatedate;
+    }else{
+        alert("Please Check the reCAPTCHA Box to Submit the Lead !");
+        event.preventDefault();//this method stop the submission of the form
+    }
 }
 
 function timestamp() {
@@ -17,3 +24,7 @@ function timestamp() {
      } 
     }
  setInterval(timestamp, 500);
+
+ function captchasuccess(){
+    captcha=true;
+ }

@@ -14,7 +14,7 @@
   
     <h1>Create Lead</h1>
     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5g00000LOawI"
-     method="POST" onsubmit="beforesubmit()">
+     method="POST" onsubmit="beforesubmit(event)">
     
     <input type=hidden name="oid" value="00D5g00000LOawI">
     <input type=hidden name="retURL" value="https://divyeshvasoya.github.io/webToLeadBootCamp/thanks.html">
@@ -32,7 +32,7 @@
     -->
     <label>Date</label>
     <input type="date" required="true" class="inputdate"/>
-    <div class="g-recaptcha" data-sitekey="6Lcexp4pAAAAAOxdvSO56o7-xR8N97ntVRy6MCna"></div><br>
+    <div class="g-recaptcha" data-callback="captchasuccess()" data-sitekey="6Lcexp4pAAAAAOxdvSO56o7-xR8N97ntVRy6MCna"></div><br>
     <input type="submit" name="submit" class="submit">
     
     </form>
