@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-family:monaco,monospace;
+}
+input,label{
+    display: block;
+    font-family:monaco,monospace;
+}
+label{
+    color: green;
+}
+input{
+    width: 100%;
+}
+.submit{
+    /*
+margin top right bottom left
+*/
+    margin: 15px;
+    width: 40%;
+    background-color: rgb(215, 187, 239);
+    border-radius: 5px;
+    margin: 15px auto 0 auto;
+    box-shadow: rgb(93, 91, 91) 2px 2px;
+}
+
+form{
+    min-width:300px;
+    max-width: 500px;
+    margin: auto;
+    border:2px solid rgb(118, 115, 115) ;
+    padding: 10px;
+    box-shadow:rgb(93, 91, 91) 3px 3px ;
+}
