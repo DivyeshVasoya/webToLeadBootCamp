@@ -25,7 +25,7 @@ margin top right bottom left
     width: 40%;
     background-color: rgb(215, 187, 239);
     border-radius: 5px;
-    margin: 15px auto 0 auto;
+    margin: 10px auto 10px auto;
     box-shadow: rgb(93, 91, 91) 2px 2px;
 }
 
@@ -36,4 +36,9 @@ form{
     border:2px solid rgb(118, 115, 115) ;
     padding: 10px;
     box-shadow:rgb(93, 91, 91) 3px 3px ;
+}
+.g-recaptcha{
+   margin-top: 18px;
+   justify-content: center;
+   display:flex;
 }
