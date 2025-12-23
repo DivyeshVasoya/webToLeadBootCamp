@@ -12,7 +12,7 @@
 
     
   
-    <h1>Create Lead</h1>
+    <h1>Create Lead</h1><!--
     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5g00000LOawI"
      method="POST" onsubmit="beforesubmit(event)">
     
@@ -29,12 +29,59 @@
     <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" required="true"/><br>
     <!--
     <label>Date</label><span class="dateInput dateOnlyInput"><input  id="00N5g00000iWdle" name="00N5g00000iWdle" size="12" type="date" required="true"/></span><br>
-    -->
+    --><!--
     <label>Date</label>
     <input type="date" required="true" class="inputdate"/>
     <div class="g-recaptcha" data-callback="captchasuccess" data-sitekey="6Lcexp4pAAAAAOxdvSO56o7-xR8N97ntVRy6MCna"></div><br>
     <input type="submit" name="submit" class="submit">
     </form>
+-->
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5g00000LOawI" method="POST">
+
+<input type=hidden name="oid" value="00D5g00000LOawI">
+<input type=hidden name="retURL" value="https://divyeshvasoya.github.io/webToLeadBootCamp/thanks.html">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="divyeshvasoya64@gmail.com">                                      -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+<label for="rating">Rating</label><select  id="rating" name="rating"><option value="">--None--</option><option value="Hot">Hot</option>
+<option value="Warm">Warm</option>
+<option value="Cold">Cold</option>
+</select><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+
+<label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+
+<label for="state">State/Province</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
+
+<label for="salutation">Salutation</label><select  id="salutation" name="salutation"><option value="">--None--</option><option value="Mr.">Mr.</option>
+<option value="Ms.">Ms.</option>
+<option value="Mrs.">Mrs.</option>
+<option value="Dr.">Dr.</option>
+<option value="Prof.">Prof.</option>
+<option value="Mx.">Mx.</option>
+</select><br>
+
+<input type="submit" name="submit">
+
+</form>
 
 </body>
 </html>
